@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+// font-family
+$baseFontFamily : '游明朝体', 'Yu Mincho','ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ', Meiryo, serif;
+$titleFontFamily : 'HG正楷書体-PRO';
+
+// colors
+$baseColor: #FFF;
+$subColor: #6bc7d4;           
+$keyColor: #fd6576;
+$greenColor: #c0ea8b;
+$fontColor: #333;
+
+
+// 　Accessories
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $fontColor;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+//   vertical-align: bottom;
+  display: block;
+}
+
+
+
+// 共通Base
+html{ font-size: 62.5%; } 
+
+body{
+    margin: 0 auto;
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    background-color: $baseColor;
+    line-height: 1.7;
+    letter-spacing: 0.1rem;
+}
+
+
+.bg-slider {
+
+  width: 100vw;
+  height: 100vh;
+  background-position:center center;
+  background-size: cover;
+  position: relative;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+    
+  .rogotitle {
+      margin: 0 auto;
+      width: 10%;
+      height: 90vh;
+      padding-top: 3.0rem;
+      background-color: rgba(0,0,0,0.5);
+      
+      img {
+          width: 50%;
+          margin: 0 auto;
+          padding-left: 5%;
+      }
+      
+      ul {
+          padding-top: 5.0rem;
+          margin: 0 auto;
+          text-align:center;
+          font-size: 1.3rem;
+          font-family: $titleFontFamily;
+          
+          li {
+              line-height: 2.5;
+              
+              a {
+                  color: $baseColor;
+              }
+          }
+      }
+  }
+    
+  .headscreen {
+    width:100%;
+    height: auto;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    /*margin-top: -8%;*/
+  }
+
+}
+
+
+.area {
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: -5rem;
+    font-weight: bold;
+}
+/* 表示領域に合わせてサイズと余白を設定 */
+.marquee {
+    width: 650px;
+    padding-left: 650px;
+    padding-right: 650px;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes marquee {
+    from    { transform: translate(0%); } 
+    100%,to { transform: translate(-100%); }
+}
+
+
+.tab {
+  cursor:pointer;
+}
+
+.panel {
+  display:none;
+}
+
+.is-show {
+  display:block;
+}
+
+
+
+
+
+.slider-wrapper {
+  width: 600px;
+  padding: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #CCC;
+}
+
+.slider {
+  width: 850px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider > * {
+  -webkit-transform: translateZ(0px);
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+  height: 0 !important;
+}
+
+.unit {
+  float: left;
+  width: 150px;
+  margin: 0 0 0 5px;
+  border: 1px solid #DDDDDD;
+  background: #EFEFEF;
+}
+
+.unit:first-child {
+  margin: 0;
+}
+
+.unit .img {
+  text-align: center;
+}
