@@ -14,7 +14,7 @@ jQuery(function($){
 
 jQuery(function($) {
   $('.bg-slider').bgSwitcher({
-   images: ['img/gar1.jpg','img/gar2.jpg','img/gar3.jpg'], 
+   images: ['img/gar1.jpg','img/gar2.jpg','img/gar3.jpg','img/gar4.jpg'], 
 　 interval: 5000,
 　 loop: true,
 　 shuffle: true,
@@ -22,4 +22,17 @@ jQuery(function($) {
 　 duration: 800,
 　 easing: "swing" // linear,swing
    });
-  });
+ });
+ 
+ 
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel(
+        {
+            loop: false,
+            nav: false,
+            dots: false,
+            items: 3,
+            autoplay: false
+        }
+    );
+});

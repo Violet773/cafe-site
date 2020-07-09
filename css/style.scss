@@ -112,6 +112,7 @@ body{
     margin-top: -5rem;
     font-weight: bold;
 }
+
 /* 表示領域に合わせてサイズと余白を設定 */
 .marquee {
     width: 650px;
@@ -142,43 +143,8 @@ body{
 }
 
 
-
-
-
-.slider-wrapper {
-  width: 600px;
-  padding: 5px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  background: #CCC;
-}
-
-.slider {
-  width: 850px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.slider > * {
-  -webkit-transform: translateZ(0px);
-}
-
-.slider-wrapper::-webkit-scrollbar {
-  display: none;
-  height: 0 !important;
-}
-
-.unit {
-  float: left;
-  width: 150px;
-  margin: 0 0 0 5px;
-  border: 1px solid #DDDDDD;
-  background: #EFEFEF;
-}
-
-.unit:first-child {
-  margin: 0;
-}
-
-.unit .img {
-  text-align: center;
+.owl-carousel {
+  .carousel-img {
+padding:2.0rem;
+  }
 }
