@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-        
+    <title>古民家カフェ なごみや</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -15,8 +17,8 @@
     
     <!-- jQuery 
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>-->
     <script src="owlcarousel/owl.carousel.min.js"></script>    
     <script src="js/bgswitcher.js"></script>
     <script src="js/script.js"></script>    
@@ -28,9 +30,9 @@
         <div class="rogotitle">
             <img src="img/logo-title.png" alt="">
             <ul>
-                <li><a href="">お店について</a></li>
-                <li><a href="">お品書き</a></li>
-                <li><a href="">場所</a></li>
+                <li><a href="#about">お店について</a></li>
+                <li><a href="#menu">お品書き</a></li>
+                <li><a href="#information">店舗情報</a></li>
             </ul>
         </div>
         <div class="headscreen">
@@ -44,50 +46,258 @@
         </div>
     </div>
         
-            
-       
-    <div id="ps-menu">
-        <!--タブ-->
-        <ul class="tab-group">
-            <li class="tab is-active">お飲み物</li>
-            <li class="tab">お菓子</li>
-            <li class="tab">セット</li>
-            <li class="tab">本日のランチ</li>
-        </ul>
-        
-        <!--タブを切り替えて表示するコンテンツ-->
-        <div class="panel-group">
-            <div class="panel is-show">Content-A</div>
-            <div class="panel">Content-B</div>
-            <div class="panel">Content-C</div>
-            <div class="panel">Content-D</div>
+    <div id="about">
+        <h1 class="title"><span>―</span>&emsp;お店について&emsp;<span>―</span></h1>
+        <div class="about-wrp">
+            <div class="about head">
+                <p class="about-text ja">東京の喧騒を忘れさせてくれる、<br>
+                隠れ家のような和カフェ。<br><br>
+                抹茶を中心に、和のお飲み物と<br>
+                スィーツをゆったりとした空間<br>
+                でお楽しみいただけます。<br><br>
+                心も体もリフレッシュする<br>
+                ひとときをお過ごしください。</p>
+                <div class="about-img room">
+                    <img src="img/room02.jpg" alt="">
+                </div>
+            </div>
+            <div class="about bottom">
+                <div class="about-img cha">
+                    <img src="img/about-bottom.png" alt="">
+                </div>
+                <p class="about-text en">Japanese cafe such as the hideout letting<br>you forget the noise of Tokyo.<br><br>
+                Space spacious mainly on Green Tea with<br>a Japanese drink and sweets,<br>You can enjoy it in this.<br><br>
+                Please spend a moment to refresh both the heart and the body.</p>
+            </div>
+            <div class="about-title-en">
+                <img src="img/about-title.png" alt="">
+            </div>
+        </div>
+    </div>        
+    
+    <div id="menu">
+        <h1 class="title"><span>―</span>&emsp;お品書き&emsp;<span>―</span></h1>
+        <img class="menu-title-img" src="img/menu-title.png" alt="">
+        <div id="ps-menu">
+            <ul class="tab-group">
+                <li class="tab is-active">お飲み物</li>
+                <li class="tab">お菓子</li>
+                <li class="tab">ランチ</li>
+            </ul>
+            <div class="panel-group">
+                <div class="panel is-show">
+                    <h2 class="vertical">お飲み物&emsp;DRINK</h2>
+                    <div class="menu-wrp">
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri05.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>冷やし抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">600円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri06.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>冷やし抹茶ラテ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">700円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri07.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>冷やし穀物珈琲</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">650円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri08.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>冷やし黒糖ミルク</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">750円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri01.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">600円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri02.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>抹茶ラテ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">650円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri03.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>穀物珈琲</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item drink">
+                            <img class="item-img drink-img" src="img/dri04.jpg" alt="">
+                            <div class="item-text drink-text">
+                                <h3>黒糖ラテ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">650円（税別）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2 class="vertical">お菓子&emsp;SWEETS</h2>
+                    <div class="menu-wrp">
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet08.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶ティラミス</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet07.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶ブラウニー</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet04.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>蜂蜜パンケーキ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet09.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>和三盆ケーキ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet10.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet06.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet07.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                        <div class="item sweet">
+                            <img class="item-img sweet-img" src="img/sweet07.jpg" alt="">
+                            <div class="item-text sweet-text">
+                                <h3>抹茶</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">550円（税別）</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel">
+                    <h2 class="vertical">ランチ&emsp;LUNCH&emsp;------11:00～14:00------</h2>
+                    <div class="menu-wrp">
+                        <div class="item lunch">
+                            <img class="item-img lunch-img" src="img/lunch01.jpg" alt="">
+                            <div class="item-text lunch-text">
+                                <h3>本日のランチ</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">1,450円（税別）</p>
+                            </div>
+                        </div>                        
+                        <div class="item lunch">
+                            <img class="item-img lunch-img" src="img/lunch02.jpg" alt="">
+                            <div class="item-text lunch-text">
+                                <h3>手巻き寿司御膳</h3>
+                                <p class="text">テキストテキストテキスト</p>
+                                <p class="price">1,650円（税別）</p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sp-menu">
+            <div class="owl-carousel owl-theme menu-wrp drink">
+                <div><img class="carousel-img" src="img/dri01.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri02.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri03.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri04.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri05.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri06.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri07.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/dri08.jpg" alt=""></div>
+            </div>
+            <div class="owl-carousel owl-theme menu-wrp sweets">
+                <div><img class="carousel-img" src="img/sweet01.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet02.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet03.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet04.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet05.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet06.jpg" alt=""></div>
+                <div><img class="carousel-img" src="img/sweet07.jpg" alt=""></div>
+            </div>
+            <div class="menu-wrp lunch">
+                <div><img class="carousel-img" src="img/lunch01.jpg" alt=""></div>
+            </div>
+        </div>    
+    </div>
+    
+    <div id="information">
+        <h1 class="title"><span>―</span>&emsp;店舗情報&emsp;<span>―</span></h1>
+        <div class="info-wrp">
+            <div class="ggmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5741326704806!2d139.72538423393283!3d35.71209613342023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d04113c1c37%3A0x8073375b569bc14f!2z44Ob44OG44Or5qS_5bGx6I2Y5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1594466588072!5m2!1sja!2sjp" width="900" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="info-text">
+                <h2><img src="img/info-title.png" alt=""></h2>
+                <h3><img src="img/title-min.png" alt=""></h3>
+                <p>〒&nbsp;122-0000<br>
+                東京都文京区関口２丁目１０番</p>
+                <p class="textlast">TEL:&nbsp;03-999-9999</p><br>
+                <p>OPEN:&nbsp;11:00〜21:00(L.O.&nbsp;20:30)</p>
+                <p class="textlast">HOLIDAY:&nbsp;月曜日</p><br>
+                <p class="font-s">都電荒川線「早稲田」駅より徒歩５分</p>
+                <p class="font-s">有楽町線「江戸川橋」駅より徒歩５分</p><br>
+                <div class="link"><a href="https://goo.gl/maps/izCNLTnrQ9xoWgVR9">Google Map で見る →</a></div>
+            </div>
         </div>
     </div>
-        
-    <div id="sp-menu">
-        <div class="owl-carousel owl-theme menu-wrp drink">
-            <div><img class="carousel-img" src="img/dri01.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri02.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri03.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri04.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri05.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri06.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri07.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/dri08.jpg" alt=""></div>
-        </div>
-        <div class="owl-carousel owl-theme menu-wrp sweets">
-            <div><img class="carousel-img" src="img/sweet01.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet02.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet03.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet04.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet05.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet06.jpg" alt=""></div>
-            <div><img class="carousel-img" src="img/sweet07.jpg" alt=""></div>
-        </div>
-        <div class="menu-wrp lunch">
-            <div><img class="carousel-img" src="img/lunch01.jpg" alt=""></div>
-        </div>
-    </div>    
     
+    <p class="to-top"><i class="fas fa-chevron-up"></i></p>
+    
+    <footer>
+        <p class="copy">copyright (C) Nagomiya all rights reserved.</p>
+    </footer>
+
 </body>
 </html>

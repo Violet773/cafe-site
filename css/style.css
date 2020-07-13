@@ -31,18 +31,15 @@ body {
 
 .bg-slider {
   width: 100vw;
-  height: 100vh;
+  height: 97vh;
   background-position: center center;
   background-size: cover;
-  position: relative;
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/ }
+  position: relative; }
   .bg-slider .rogotitle {
     margin: 0 auto;
     width: 10%;
     height: 90vh;
-    padding-top: 3.0rem;
+    padding-top: 4.0rem;
     background-color: rgba(0, 0, 0, 0.5); }
     .bg-slider .rogotitle img {
       width: 50%;
@@ -63,14 +60,13 @@ body {
     height: auto;
     position: absolute;
     left: 0;
-    bottom: 0;
-    /*margin-top: -8%;*/ }
+    bottom: 0; }
 
 .area {
   width: 650px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: -5rem;
+  margin-top: -3.0rem;
   font-weight: bold; }
 
 /* 表示領域に合わせてサイズと余白を設定 */
@@ -89,16 +85,180 @@ body {
     transform: translate(0%); }
   100%,to {
     transform: translate(-100%); } }
-.tab {
-  cursor: pointer; }
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5.0rem 0 2.0rem; }
+  .title span {
+    font-weight: 100; }
 
-.panel {
-  display: none; }
+#about {
+  background-image: url(../img/about-back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 550px;
+  padding: 0 10%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  margin-bottom: 10.0rem; }
+  #about .about-wrp {
+    position: relative; }
+    #about .about-wrp .about {
+      display: flex;
+      margin-bottom: 2.5rem;
+      margin-top: 4.0rem; }
+      #about .about-wrp .about .about-text {
+        width: 50%; }
+      #about .about-wrp .about .ja {
+        writing-mode: vertical-rl;
+        padding-right: 4%;
+        line-height: 2.5;
+        font-size: 1.6rem; }
+      #about .about-wrp .about .en {
+        padding: 3.0rem 0 0 3.0rem;
+        font-size: 1.6rem;
+        line-height: 2; }
+      #about .about-wrp .about .about-img {
+        width: 45%; }
+        #about .about-wrp .about .about-img img {
+          width: 80%;
+          margin: 0 auto; }
+      #about .about-wrp .about .room img {
+        border-radius: 10px; }
+    #about .about-wrp .about-title-en {
+      position: absolute;
+      bottom: 30%;
+      right: -5%; }
+      #about .about-wrp .about-title-en img {
+        width: 200px; }
 
-.is-show {
-  display: block; }
+#menu {
+  position: relative;
+  background-image: url(../img/about-back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 550px; }
+  #menu .menu-title-img {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 188px; }
+  #menu #ps-menu ul {
+    display: flex;
+    justify-content: center; }
+    #menu #ps-menu ul li {
+      width: 20%;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold; }
+  #menu #ps-menu .panel-group {
+    padding: 2.0rem 1.0rem; }
+    #menu #ps-menu .panel-group .vertical {
+      writing-mode: vertical-rl;
+      float: left; }
+    #menu #ps-menu .panel-group .menu-wrp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #menu #ps-menu .panel-group .menu-wrp .item {
+        padding: 0 2.0rem 2.0rem; }
+        #menu #ps-menu .panel-group .menu-wrp .item .item-img {
+          margin: 0 auto; }
+        #menu #ps-menu .panel-group .menu-wrp .item .item-text {
+          text-align: center;
+          margin-top: 1.0rem; }
+          #menu #ps-menu .panel-group .menu-wrp .item .item-text h3 {
+            font-size: 1.5rem; }
+      #menu #ps-menu .panel-group .menu-wrp .drink, #menu #ps-menu .panel-group .menu-wrp .sweet {
+        width: 24%; }
+      #menu #ps-menu .panel-group .menu-wrp .lunch {
+        width: 49%; }
+        #menu #ps-menu .panel-group .menu-wrp .lunch .item-img {
+          width: 80%; }
+  #menu #ps-menu .tab {
+    cursor: pointer; }
+  #menu #ps-menu .panel {
+    display: none; }
+  #menu #ps-menu .is-show {
+    display: block; }
+  #menu #sp-menu {
+    display: none; }
 
 .owl-carousel .carousel-img {
   padding: 2.0rem; }
+
+.to-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  right: 0;
+  bottom: 0;
+  font-size: 40px;
+  color: #fff;
+  background: #c0ea8b;
+  opacity: 0.8;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999; }
+
+.to-top:hover {
+  opacity: 1.0; }
+
+#information .info-wrp {
+  position: relative; }
+  #information .info-wrp .ggmap {
+    position: relative;
+    padding-bottom: 33.33%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+    #information .info-wrp .ggmap iframe,
+    #information .info-wrp .ggmap object,
+    #information .info-wrp .ggmap embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    #information .info-wrp .ggmap iframe {
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1); }
+    #information .info-wrp .ggmap iframe:hover {
+      ilter: grayscale(0) saturate(2);
+      -webkit-filter: grayscale(0) saturate(2);
+      transition: filter 0.8s ease; }
+  #information .info-wrp .info-text {
+    position: absolute;
+    width: 23%;
+    right: 10%;
+    bottom: 5%;
+    background-color: #fff;
+    padding: 2.5rem;
+    border: 1.5px solid #d7f2b6; }
+    #information .info-wrp .info-text h2 {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem; }
+    #information .info-wrp .info-text h3 {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 2.0rem; }
+    #information .info-wrp .info-text .font-s {
+      font-size: 1.2rem; }
+    #information .info-wrp .info-text .link a {
+      text-align: center;
+      background-color: #d7f2b6;
+      border-radius: 5px;
+      padding: 0.5rem; }
+    #information .info-wrp .info-text .link a:hover {
+      background-color: #c0ea8b;
+      cursor: pointer; }
+
+footer {
+  background-color: #d7f2b6; }
+  footer p {
+    text-align: center;
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
