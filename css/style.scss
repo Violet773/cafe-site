@@ -6,7 +6,7 @@ $titleFontFamily : 'HG正楷書体-PRO';
 
 // colors
 $baseColor: #FFF;
-$subColor: #6bc7d4;           
+$subColor: #EBD299;           
 $keyColor: #fd6576;
 $greenColor: #c0ea8b;
 $fontColor: #333;
@@ -199,9 +199,6 @@ body{
 #menu {
   
   position: relative;
-  background-image: url(../img/about-back.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 550px;  
   
   .menu-title-img {
     position :absolute;
@@ -212,9 +209,10 @@ body{
   
   #ps-menu {
     
-  ul {
+  .tab-group {
       display: flex;
       justify-content: center;
+      border-bottom: 2.0px solid #EBD299;
       
       li {
         width : 20%;
@@ -226,9 +224,13 @@ body{
     
   .panel-group {
     
-    padding: 2.0rem 1.0rem;
+    padding: 4.0rem 1.0rem 2.0rem;
     
     .vertical {
+      margin-left: 2.0rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.5rem;
+      color: $subColor;
       writing-mode: vertical-rl;
       float: left;
     }
@@ -271,6 +273,16 @@ body{
   
   .tab {
     cursor:pointer;
+    
+    i {
+      color: #EBD299;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .is-active {
+    background: linear-gradient(transparent 90%, #EBD299 90%);
+    cursor: auto;
   }
   
   .panel {
@@ -409,3 +421,4 @@ footer {
     font-size: 1.2rem;
   }
 }
+
