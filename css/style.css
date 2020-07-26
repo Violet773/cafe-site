@@ -314,33 +314,18 @@ footer {
       bottom: 50%;
       width: 200px; }
 
-  #menu #ps-menu {
-    display: none; }
-  #menu #sp-menu {
-    display: block; }
-    #menu #sp-menu .menu-title {
-      font-size: 2.0rem;
-      margin: 2.0rem 0 1.5rem 2.0rem; }
-    #menu #sp-menu .sp-only {
-      display: none; }
-    #menu #sp-menu .menu-wrp {
-      margin-bottom: 0; }
-    #menu #sp-menu .owl-carousel .item {
-      padding-left: 2.0rem; }
-      #menu #sp-menu .owl-carousel .item .item-img {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
-      #menu #sp-menu .owl-carousel .item .item-text {
-        text-align: center;
-        padding-top: 1.0rem; }
-    #menu #sp-menu .lunch {
-      display: flex;
-      padding-left: 2.0rem; }
-      #menu #sp-menu .lunch .lunchitem {
-        width: 50%;
-        padding-right: 2.0rem;
-        text-align: center; }
-        #menu #sp-menu .lunch .lunchitem .lunch-text h3 {
-          margin-top: 1.0rem; }
+  #menu #ps-menu .tab-group li {
+    width: 30%; }
+  #menu #ps-menu .panel-group .vertical {
+    margin-left: 0; }
+  #menu #ps-menu .panel-group .menu-wrp .item {
+    padding: 0 1.0rem 2.0rem; }
+  #menu #ps-menu .panel-group .menu-wrp .drink,
+  #menu #ps-menu .panel-group .menu-wrp .sweet {
+    width: 50%; }
+  #menu #ps-menu .panel-group .menu-wrp .lunch {
+    width: 100%;
+    padding: 0 0 3.0rem 0; }
 
   #information .info-wrp {
     margin: 3.0rem 0 5.0rem; }
@@ -376,17 +361,13 @@ footer {
       width: 85%; }
     #about .about-wrp .about .en {
       padding-left: 10%;
-      padding-top: 3.0rem; }
+      padding-top: 3.0rem;
+      padding-right: 10%; }
     #about .about-wrp .about .cha {
       margin-left: 4.5rem; }
 
   #menu .menu-title-img {
-    left: 45%;
-    top: 4%; }
-  #menu #sp-menu {
-    margin-top: 3.5rem; }
-    #menu #sp-menu .sp-only {
-      display: block; }
+    top: -5%; }
 
   #information .info-wrp .info-text {
     width: 315px; } }

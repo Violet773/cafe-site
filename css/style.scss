@@ -510,60 +510,86 @@ footer {
   #menu {
     
     #ps-menu {
-      display: none;
-    }
-    
-    #sp-menu {
-      display: block;
       
-      .menu-title {
-        font-size: 2.0rem;
-        margin: 2.0rem 0 1.5rem 2.0rem;
+      .tab-group li  {
+        width: 30%;
       }
       
-      .sp-only {
-        display: none;
-      }
-      
-      .menu-wrp {
-        margin-bottom: 0;
-      }
-      
-      .owl-carousel {
+      .panel-group {
+        .vertical {
+          margin-left: 0;
+        }
         
-        .item {
+        .menu-wrp {
           
-          padding-left: 2.0rem;
-          
-          .item-img {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          .item {
+            padding: 0 1.0rem 2.0rem;
           }
           
-          .item-text {
-            
-            text-align: center;
-            padding-top: 1.0rem;
+          .drink,
+          .sweet{
+            width: 50%;
+          }
+          
+          .lunch {
+            width: 100%;
+            padding: 0 0 3.0rem 0;
           }
         }
       }  
-      
-      .lunch {
-        display: flex;
-        padding-left: 2.0rem;
-        
-        .lunchitem {
-          width: 50%;
-          padding-right: 2.0rem;
-          text-align: center;
-          
-          .lunch-text {
-            h3 {
-              margin-top: 1.0rem;
-            }
-          }
-        }
-      }
     }
+    
+    // #sp-menu {
+    //   display: block;
+      
+    //   .menu-title {
+    //     font-size: 2.0rem;
+    //     margin: 2.0rem 0 1.5rem 2.0rem;
+    //   }
+      
+    //   .sp-only {
+    //     display: none;
+    //   }
+      
+    //   .menu-wrp {
+    //     margin-bottom: 0;
+    //   }
+      
+    //   .owl-carousel {
+        
+    //     .item {
+          
+    //       padding-left: 2.0rem;
+          
+    //       .item-img {
+    //         box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    //       }
+          
+    //       .item-text {
+            
+    //         text-align: center;
+    //         padding-top: 1.0rem;
+    //       }
+    //     }
+    //   }  
+      
+    //   .lunch {
+    //     display: flex;
+    //     padding-left: 2.0rem;
+        
+    //     .lunchitem {
+    //       width: 50%;
+    //       padding-right: 2.0rem;
+    //       text-align: center;
+          
+    //       .lunch-text {
+    //         h3 {
+    //           margin-top: 1.0rem;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
   
   #information {
@@ -633,6 +659,7 @@ footer {
         .en {
           padding-left: 10%;
           padding-top: 3.0rem;
+          padding-right: 10%;
         }
         
         .cha {
@@ -646,17 +673,16 @@ footer {
   
   #menu {
     .menu-title-img {
-      left: 45%;
-      top: 4%;   
+      top: -5%;   
     }
     
-    #sp-menu {
-      margin-top: 3.5rem;
+    // #sp-menu {
+    //   margin-top: 3.5rem;
       
-      .sp-only {
-        display: block;
-      }
-    }
+    //   .sp-only {
+    //     display: block;
+    //   }
+    // }
   }  
   
   #information {
