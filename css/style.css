@@ -38,8 +38,8 @@ body {
   .bg-slider .rogotitle {
     margin: 0 auto;
     width: 130px;
-    height: 90vh;
-    padding-top: 4.0rem;
+    height: 93vh;
+    padding-top: 6.0rem;
     background-color: rgba(0, 0, 0, 0.5); }
     .bg-slider .rogotitle img {
       width: 50%;
@@ -78,6 +78,9 @@ body {
   animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
+
+.sp-today {
+  display: none; }
 
 @keyframes marquee {
   from {
@@ -268,7 +271,7 @@ footer {
 
 @media (max-width: 1024px) {
   .bg-slider .rogotitle {
-    padding-top: 15vh; }
+    padding-top: 30vh; }
   .bg-slider .headscreen {
     bottom: -1px; }
 
@@ -292,6 +295,13 @@ footer {
     right: 5%;
     bottom: 13%; } }
 @media (max-width: 768px) {
+  .pc-today {
+    display: none; }
+
+  .sp-today {
+    display: block;
+    text-align: center; }
+
   #about {
     padding: 0; }
     #about .about-wrp .about .ja {
@@ -310,9 +320,15 @@ footer {
     display: block; }
     #menu #sp-menu .menu-title {
       font-size: 2.0rem;
-      margin: 5.0rem 0 1.5rem 2.0rem; }
+      margin: 2.0rem 0 1.5rem 2.0rem; }
+    #menu #sp-menu .sp-only {
+      display: none; }
+    #menu #sp-menu .menu-wrp {
+      margin-bottom: 0; }
     #menu #sp-menu .owl-carousel .item {
       padding-left: 2.0rem; }
+      #menu #sp-menu .owl-carousel .item .item-img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
       #menu #sp-menu .owl-carousel .item .item-text {
         text-align: center;
         padding-top: 1.0rem; }
@@ -334,5 +350,51 @@ footer {
       margin: 0 auto; }
     #information .info-wrp .ggmap {
       display: none; } }
+@media (max-width: 767px) {
+  .bg-slider {
+    height: 100vh; }
+    .bg-slider .rogotitle {
+      height: 100vh;
+      padding-top: 10.0rem; }
+      .bg-slider .rogotitle .rogotitle ul {
+        padding-top: 10.0rem; }
+    .bg-slider .headscreen {
+      display: none; }
+
+  .area {
+    display: none; }
+
+  #about .about-wrp .about {
+    flex-direction: column; }
+    #about .about-wrp .about .about-text {
+      width: 100%;
+      font-size: 1.4rem; }
+    #about .about-wrp .about .ja {
+      padding-right: 15%;
+      height: 240px; }
+    #about .about-wrp .about .about-img {
+      width: 85%; }
+    #about .about-wrp .about .en {
+      padding-left: 10%;
+      padding-top: 3.0rem; }
+    #about .about-wrp .about .cha {
+      margin-left: 4.5rem; }
+
+  #menu .menu-title-img {
+    left: 45%;
+    top: 4%; }
+  #menu #sp-menu {
+    margin-top: 3.5rem; }
+    #menu #sp-menu .sp-only {
+      display: block; }
+
+  #information .info-wrp .info-text {
+    width: 315px; } }
+@media (max-width: 370px) {
+  #about .about-wrp .about .ja {
+    padding-right: 10%; }
+
+  #menu .menu-title-img {
+    left: 40%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,7 +32,6 @@ img {
   width: 100%;
   height: auto;
   border: none;
-//   vertical-align: bottom;
   display: block;
 }
 
@@ -63,8 +62,8 @@ body{
   .rogotitle {
     margin: 0 auto;
     width: 130px;
-    height: 90vh;
-    padding-top: 4.0rem;
+    height: 93vh;
+    padding-top: 6.0rem;
     background-color: rgba(0,0,0,0.5);
     
     img {
@@ -116,6 +115,10 @@ body{
   animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.sp-today {
+  display: none;
 }
 
 @keyframes marquee {
@@ -418,7 +421,7 @@ footer {
     
     .rogotitle {
       
-      padding-top: 15vh;
+      padding-top: 30vh;
       
     }
 
@@ -474,9 +477,14 @@ footer {
 
 @media (max-width: 768px) {
   
-  // .area {
-  //   display: none;
-  // }
+  .pc-today {
+    display: none;
+  }
+  
+  .sp-today {
+    display: block;
+    text-align: center;
+  }
   
   #about {
     padding: 0;
@@ -510,7 +518,15 @@ footer {
       
       .menu-title {
         font-size: 2.0rem;
-        margin: 5.0rem 0 1.5rem 2.0rem;
+        margin: 2.0rem 0 1.5rem 2.0rem;
+      }
+      
+      .sp-only {
+        display: none;
+      }
+      
+      .menu-wrp {
+        margin-bottom: 0;
       }
       
       .owl-carousel {
@@ -518,6 +534,10 @@ footer {
         .item {
           
           padding-left: 2.0rem;
+          
+          .item-img {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          }
           
           .item-text {
             
@@ -562,4 +582,109 @@ footer {
     }  
   }
   
+}
+
+@media (max-width: 767px) {
+  
+  .bg-slider {
+    height: 100vh;
+    
+    .rogotitle {
+      height: 100vh;
+      padding-top: 10.0rem;
+      
+       .rogotitle ul {
+         padding-top: 10.0rem;
+       }
+    }
+    
+    .headscreen {
+      display: none;
+    }
+  }
+  
+  .area {
+    display: none;
+  }
+  
+  #about {
+    
+    .about-wrp {
+      
+      .about {
+        flex-direction: column;
+        
+        .about-text {
+          
+          width: 100%;
+          font-size: 1.4rem;
+        }
+        
+        .ja {
+          padding-right: 15%;
+          height: 240px;
+        }
+        
+        .about-img {
+          width: 85%;
+          // margin: 0 auto;
+        }
+        
+        .en {
+          padding-left: 10%;
+          padding-top: 3.0rem;
+        }
+        
+        .cha {
+          margin-left: 4.5rem;
+        }
+      }
+      
+    }
+    
+  }  
+  
+  #menu {
+    .menu-title-img {
+      left: 45%;
+      top: 4%;   
+    }
+    
+    #sp-menu {
+      margin-top: 3.5rem;
+      
+      .sp-only {
+        display: block;
+      }
+    }
+  }  
+  
+  #information {
+    
+    .info-wrp {
+      
+      .info-text {
+        width: 315px;
+      }
+    }
+  }  
+}
+
+@media (max-width: 370px) {
+  
+  #about {
+    .about-wrp {
+      .about {
+        .ja {
+          padding-right: 10%;
+        }
+      }
+    }  
+  }
+  
+  #menu {
+    .menu-title-img {
+      left: 40%;
+    }
+  }  
 }

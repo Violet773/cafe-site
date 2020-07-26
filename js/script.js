@@ -44,7 +44,7 @@ $(document).ready(function(){
             loop: false,
             nav: false,
             dots: false,
-            items: 3,
+            items: 2.5,
             autoplay: false
         }
     );
