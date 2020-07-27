@@ -367,15 +367,12 @@ footer {
       margin-left: 4.5rem; }
 
   #menu .menu-title-img {
-    top: -5%; }
+    display: none; }
 
   #information .info-wrp .info-text {
     width: 315px; } }
 @media (max-width: 370px) {
   #about .about-wrp .about .ja {
-    padding-right: 10%; }
-
-  #menu .menu-title-img {
-    left: 40%; } }
+    padding-right: 10%; } }
 
 /*# sourceMappingURL=style.css.map */

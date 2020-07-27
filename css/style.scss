@@ -673,16 +673,8 @@ footer {
   
   #menu {
     .menu-title-img {
-      top: -5%;   
+      display: none;   
     }
-    
-    // #sp-menu {
-    //   margin-top: 3.5rem;
-      
-    //   .sp-only {
-    //     display: block;
-    //   }
-    // }
   }  
   
   #information {
@@ -708,9 +700,4 @@ footer {
     }  
   }
   
-  #menu {
-    .menu-title-img {
-      left: 40%;
-    }
-  }  
 }
